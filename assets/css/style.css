@@ -1,0 +1,943 @@
+* {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: Raleway-Bold;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+p {
+    font-family: Raleway-Regular;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+button {
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #F2F1F0;
+}
+a {
+    text-decoration: none;
+}
+.header-cont {
+    display: grid;
+}
+.header-wrapper {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+
+    padding: 10px 0 10px 0;
+}
+.header-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin-left: 100px;
+}
+.header-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.header-help {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.header-account {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.header-burger {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    margin-right: 100px;
+}
+.header-logo h1{
+    text-align: center;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+
+    color: #0788FF;
+
+    margin-left: 20px;
+}
+.header-help p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: #0788FF;
+    margin-left: 10px;
+}
+.header-account p{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: #0788FF;
+    margin-left: 10px;
+}
+.booking-cont{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.booking-cont img{
+    max-width: 100%;
+    max-width: 100%;
+
+    text-align: center;
+}
+.booking-wrapper h1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 50px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+
+    color: #0788FF;
+}
+.booking {
+    position: absolute;
+    bottom: 0;
+    top: 25%;
+    left: 18%;
+}
+@media (width: 1920px)  {
+    .booking {
+        left: 24%;
+    }
+}
+.booking-data {
+    background: #FFFFFF;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(1, 5fr);
+    gap: 30px;
+
+    padding: 40px 20px 30px 20px;
+}
+.booking-select {
+    background: #FFFFFF;
+    border: 1px solid #0000007e;
+    border-radius: 8px;
+    outline: none;
+
+    padding: 10px 20px 10px 10px;
+
+    margin-right: 50px;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.59);
+}
+.booking-select:hover {
+    border: 1px solid #0788FF;
+}
+.booking-dates {
+    background: #FFFFFF;
+    border: 1px solid #0000007e;
+    border-radius: 8px;
+    outline: none;
+
+    padding: 10px 10px 10px 5px;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.59);
+}
+.booking-dates:hover {
+    border: 1px solid #0788FF;
+}
+.booking-number {
+    background: #FFFFFF;
+    border: 1px solid #0000007e;
+    border-radius: 8px;
+    outline: none;
+
+    padding: 10px 20px 10px 10px;
+
+    margin-left: 50px;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.59);
+}
+.booking-number:hover {
+    border: 1px solid #0788FF;
+}
+.booking-button {
+    background: #0788FF;
+    border: 1px solid #0788FF;
+    border-radius: 8px;
+    outline: none;
+
+    padding: 10px 30px;
+
+    margin-left: 30px;
+
+    font-family: Raleway-Bold;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+
+    color: #fff;
+}
+.booking-button:hover {
+    background: #006ed4;
+}
+.booking-radio {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #0788FF;
+
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+    margin-right: 10px;
+}
+.booking-text {
+    position: absolute;
+    bottom: 0;
+    top: 80%;
+    right: 150px;
+    text-align: left;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #0788FF;
+}
+.travel-cont {
+    margin: 150px 250px 150px 250px;
+}
+.travel-cont p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    cursor: pointer;
+
+    color: #0788FF;
+
+    margin: 0 0 100px 0;
+}
+.travel-cont p:hover {
+    color: #006ed4;
+}
+.travel-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.travel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.travel-dates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-top: 10px;
+}
+.travel-dates h5 {
+    text-align: right;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #000000;
+}
+.travel-dates h4 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #000000;
+}
+.travel-text {
+    margin-top: 20px;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+
+    color: #0788FF;
+}
+.travel-text:hover {
+    color: #006ed4;
+}
+.travel-line {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    margin-top: 80px;
+}
+.travel-menu {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+
+    color: #0788FF;
+}
+.travel-menu:hover {
+    color: #006ed4;
+}
+.hotel-cont {
+    margin: 0 250px 150px 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 100px;
+}
+.hotel-cont img {
+    align-items: center;
+    align-content: center;
+}
+/* .advantage-cont {
+    margin: 0 250px 150px 250px;
+}
+.advantage-cards {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+
+    margin-top: 50px;
+}
+.advantage-name {
+    display: flex;
+}
+.advantage-name h1 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #0788FF;
+
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.advantage-card h2 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+    margin-left: 60px;
+    margin-top: 10px;
+} */
+.swiper-cont {
+    position: relative;
+    height: 100%;
+
+    margin: 0 250px 150px 250px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #F2F1F0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.swiper-slide img:hover {
+    transform: scale(0.9);
+}
+.swiper-text h1{
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+
+    color: #000000;
+}
+.swiper-text h2{
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #0788FF;
+
+    margin-top: 10px;
+}
+.swiper-text {
+    text-align: left;
+
+    background-color: #fff;
+
+    padding: 15px 100px 15px 30px;
+
+    border-radius: 0 0 8px 8px;
+}
+.footer-line {
+    margin: 0 250px 30px 250px;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);;
+}
+.footer-cont {
+    margin: 0 250px 30px 250px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+.footer-logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.footer-logo h1{
+    text-align: center;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+
+    color: #0788FF;
+
+    margin-left: 20px;
+}
+.footer-nav {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    cursor: pointer;
+
+    color: #0788FF;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.footer-nav h2:hover {
+    transition: 1s;
+    color: #006ed4;
+}
+.footer-social-network {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+}
+.pay-cont {
+    margin: 0 250px 100px 250px;
+}
+.pay-cont h2 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;;
+
+    color: #000000;
+
+    margin-top: 10px;
+}
+.pay-cont h3 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #000000;
+
+    margin: 10px 0 20px 0;
+}
+.nav-wrapper h2 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    cursor: pointer;
+
+    color: #0788FF;
+}
+.nav-wrapper h3 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.nav-wrapper {
+    display: flex;
+    gap: 20px;
+}
+.nav-wrapper h2:hover {
+    color: #006ed4;
+}
+.nav-cont {
+    max-width: 500px;
+    padding: 10px 0 10px 40px;
+    background-color: #fff;
+    border-radius: 8px;
+
+    margin: 10px 0 10px 50px;
+}
+.main-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main-cards {
+    margin: 10px 0 0 150px;
+}
+.main-card {
+    display: flex;
+}
+.main-reviews {
+    display: flex;
+    margin: 0 0 10px 0;
+}
+.main-text h2:hover {
+    color: #006ed4;
+}
+.main-text h2 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+
+    color: #000000;
+}
+.line {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+
+    width: 100%;
+    margin-top: 10px;
+}
+.main-text h4 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+
+    color: #000000;
+    margin-top: 10px;
+}
+.main-button {
+    background: #0788FF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+
+    padding: 10px 50px 10px 50px;
+    color: #FFFFFF;
+    margin: 30px 0 0 0;
+    align-items: center;
+    align-content: center;
+}
+.main-button:hover {
+    background-color: #006ed4;
+}
+.main-text {
+    padding: 10px 80px 10px 40px;
+    background-color: #fff;
+}
+.main-maps {
+    margin: 10px 0 0 0;
+    position: fixed;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+}
+.modal-auth {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.modal-auth.active {
+    display: flex;
+}
+.modal-cont {
+    background: #0788FF;
+    border-radius: 8px;
+
+    padding: 20px 60px;
+}
+.modal-cont__reg {
+    background: #0788FF;
+    border-radius: 8px;
+
+    padding: 20px 80px;
+}
+.modal-cont h2 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 0 10px 0;
+
+    color: #FFFFFF;
+}
+.modal-cont__reg h2 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 0 10px 0;
+
+    color: #FFFFFF;
+}
+.modal-line {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0 20px 10px 20px;
+}
+.modal-line__reg {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    margin: 0 0 10px 0;
+}
+.auth {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.auth .email{
+    background-color: #0788FF;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    margin: 10px 0 10px 0;
+}
+.auth .password{
+    background-color: #0788FF;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    margin: 0 0 10px 0;
+}
+.line-auth {
+    border: 1px solid #fff;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+.auth-button {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: #0788FF;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+}
+.modal-cont h3 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.auth-reg {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+
+    color: #FFFFFF;
+    margin: 10px 0 10px 0;
+}
+.modal-reg {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.829);
+}
+.modal-reg.active {
+    display: flex;
+}
+.reg {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.reg .email{
+    background-color: #0788FF;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    margin: 10px 0 10px 0;
+}
+.reg .password{
+    background-color: #0788FF;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    margin: 0 0 10px 0;
+}
+.reg .name{
+    background-color: #0788FF;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    margin: 10px 0 10px 0;
+}
+.reg .phone{
+    background-color: #0788FF;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+
+    color: #FFFFFF;
+
+    margin: 0 0 10px 0;
+}
+.reg-button {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+
+    color: #0788FF;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    padding: 10px 20px;
+    margin: 0 0 10px 0;
+}
+.modal-question {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 71%;
+    right: 0;
+    left: 23%;
+    align-items: center;
+    justify-content: center;
+}
+.modal-question.active {
+    display: flex;
+}
+.question-cont {
+    background-color: #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 8px;
+}
+.question-button {
+    background-color: #0788FF;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+    color: #FFFFFF;
+}
+.question-button:hover {
+    background-color: #006ed4;
+}
+.modal-burger {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    bottom: 71%;
+    right: 0;
+    left: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.modal-burger.active {
+    display: flex;
+}
+.button-burger {
+    cursor: pointer;
+}
+.burger-cont {
+    padding: 20px 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.burger-cont h3 {
+    font-family: Raleway-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+
+    margin: 10px 0 0 0;
+
+    color: #0788FF;
+}
+.burger-cont h3:hover {
+    color: #006ed4;
+}

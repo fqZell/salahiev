@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>САФК</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js" defer></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <style>
+        @font-face {
+            font-family: Raleway-Bold;
+            src: url(assets/fonts/Raleway-Bold.ttf);
+        }
+
+        @font-face {
+            font-family: Raleway-Regular;
+            src: url(assets/fonts/Raleway-Regular.ttf);
+        }
+    </style>
+
+    <div class="modal-auth">
+        <div class="modal-cont">
+            <h2>Вход</h2>
+            <div class="modal-line"></div>
+            <form method="post" class="auth">
+                <input class="email" type="email" name="email" placeholder="Почта" style="border: none;">
+                <div class="line-auth"></div>
+                <br><input class="password" type="password" name="password" placeholder="Пароль" style="border: none;">
+                <div class="line-auth"></div>
+                <br><button class="auth-button" type="submit" name="auth">Войти</button>
+            </form>
+            <h3>Нету аккаунта на нашем сайте?</h3>
+            <div class="auth-reg">Регистрация</div>
+        </div>
+    </div>
+
+    <div class="modal-reg">
+        <div class="modal-cont__reg">
+            <h2>Регистрация</h2>
+            <div class="modal-line__reg"></div>
+            <form method="post" class="reg">
+                <input class="name" type="name" name="name" placeholder="Имя" style="border: none;">
+                <div class="line-auth"></div>
+                <input class="phone" type="phone" name="phone" placeholder="Телефон" style="border: none;">
+                <div class="line-auth"></div>
+                <input class="email" type="email" name="email" placeholder="Почта" style="border: none;">
+                <div class="line-auth"></div>
+                <br><input class="password" type="password" name="password" placeholder="Пароль" style="border: none;">
+                <div class="line-auth"></div>
+                <br><button class="reg-button" type="submit" name="reg">Регистрация</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-question">
+        <div class="question-cont">
+            <button class="question-button">Чат для вопросов</button>
+            <button class="question-button">Форма обратной связи</button>
+        </div>
+    </div>
+
+    <div class="modal-burger">
+        <div class="burger-cont">
+            <h3>Путешествие</h3>
+            <h3>Чат с поддержкой</h3>
+            <h3>Вопросы</h3>
+            <h3>О компании</h3>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="header-cont">
+            <div class="header-wrapper">
+
+                <div class="header-logo">
+                    <img src="assets/images/logo/logo.svg" alt="logo">
+                    <h1>САФК</h1>
+                </div>
+
+                <div class="header-nav">
+                    <div class="header-help">
+                        <img src="assets/images/svg/help.svg" alt="help">
+                        <p class="button-question">Задать вопрос</p>
+                    </div>
+
+                    <div class="header-account">
+                        <img src="assets/images/svg/account.svg" alt="account">
+                        <p class="button-auth">Войти</p>
+                    </div>
+
+                    <div class="header-burger">
+                        <img class="button-burger" src="assets/images/svg/burger-menu.svg" alt="burger-menu">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="booking-cont">
+            <img src="assets/images/collection/booking-img.png" alt="booking-img">
+            <div class="booking-wrapper">
+                <h1>Поиск Отелей, Гостиниц по всему миру</h1>
+
+                <div class="booking">
+
+                    <div class="booking-data">
+                        <form method="post">
+                            <select name="" class="booking-select">
+                                <option disabled>Выберите направление</option>
+                                <option>Rose Rayhaan by Rotana - Dubai</option>
+                            </select>
+                            <input class="booking-dates" type="date" required>
+                            <input class="booking-dates"  type="date" required>
+                            <input  class="booking-number" type="number" placeholder="1 номер для" required>
+                            <button class="booking-button"  type="submit"><a href="hotel.html" style="color: #fff;">Найти</a></button>
+                        </form>
+                        <form class="booking-radio">
+                            <input type="radio" id="contactChoice1" value="отдых">
+                            <label for="contactChoice1">отдых</label>
+                            <input type="radio" id="contactChoice2" value="работа">
+                            <label for="contactChoice2">работа</label>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <p class="booking-text">Дубай, Париж<br>и многое другое</p>
+        </div>
+
+        <div class="travel-cont">
+            <p>Блок о путешествиях</p>
+
+            <div class="travel-wrapper">
+                <div class="travel-cards">
+                    <div class="travel-card">
+                        <img src="assets/images/collection/travel-1.png" alt="travel-1">
+
+                        <div class="travel-dates">
+                            <h4>Как путешестовать</h4>
+                            <h5>14.12.2022</h5>
+                        </div>
+
+                        <div class="travel-text">9 вредных советов для тех, кто планирует путешествие на поезде</div>
+                    </div>
+                </div>
+                <div class="travel-cards">
+                    <div class="travel-card">
+                        <img src="assets/images/collection/travel-2.png" alt="travel-2">
+
+                        <div class="travel-dates">
+                            <h4>Куда отправиться</h4>
+                            <h5>15.11.2022</h5>
+                        </div>
+
+                        <div class="travel-text">Куда отправится в путешествие с палаткой</div>
+                    </div>
+                </div>
+                <div class="travel-cards">
+                    <div class="travel-card">
+                        <img src="assets/images/collection/travel-3.png" alt="travel-3">
+
+                        <div class="travel-dates">
+                            <h4>Места для путешествий</h4>
+                            <h5>16.10.2022</h5>
+                        </div>
+
+                        <div class="travel-text">Топ 5 самых красивых мест в пустыне Сахара</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-line"></div>
+
+            <a href="travel.html"><div class="travel-menu">Показать все</div></a>
+
+        </div>
+
+        <div class="hotel-cont">
+            <img src="assets/images/collection/hotel-1.png" alt="hotel-1">
+            <img src="assets/images/collection/hotel-2.png" alt="hotel-2">
+            <img src="assets/images/collection/hotel-3.png" alt="hotel-3">
+            <img src="assets/images/collection/hotel-4.png" alt="hotel-4">
+            <img src="assets/images/collection/hotel-5.png" alt="hotel-5">
+            <img src="assets/images/collection/hotel-6.png" alt="hotel-6">
+        </div>
+
+        <!-- <div class="advantage-cont">
+            
+            <div class="advantage-cards">
+
+                <div class="advantage-card">
+                    <div class="advantage-name">
+                        <img src="assets/images/svg/money.svg" alt="money">
+                        <h1>Низкие цены</h1>
+                    </div>
+                    <h2>Мы работаем напрямую с тысячами<br>отелей, десятками поставщиков и<br>контролируем цены на номера.<br>Поэтому у нас всегда есть<br>выгодные предложения на<br>популярные направления.</h2>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-name">
+                        <img src="assets/images/svg/hotel.svg" alt="hotel">
+                        <h1>Отели по всему миру
+                        </h1>
+                    </div>
+                    <h2>У нас более 1 800 000 вариантов<br>размещения по всему миру. Это<br>отели, хостелы, апартаменты,<br>виллы и даже кемпинги. В любой<br>сезон вы найдёте то, что подходит<br>именно вам.</h2>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-name">
+                        <img src="assets/images/svg/money-2.svg" alt="money-2">
+                        <h1>Гибкая оплата</h1>
+                    </div>
+                    <h2>Вы сами выбираете способ оплаты.<br>Можно оплатить бронь сразу — мы<br>поддерживаем большинство<br>банковских карт. А можно<br>заплатить в отеле при заезде.</h2>
+                </div>
+
+            </div>
+            <div class="advantage-cards">
+
+                <div class="advantage-card">
+                    <div class="advantage-name">
+                        <img src="assets/images/svg/money.svg" alt="money">
+                        <h1>Низкие цены</h1>
+                    </div>
+                    <h2>Мы работаем напрямую с тысячами<br>отелей, десятками поставщиков и<br>контролируем цены на номера.<br>Поэтому у нас всегда есть<br>выгодные предложения на<br>популярные направления.</h2>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-name">
+                        <img src="assets/images/svg/money.svg" alt="money">
+                        <h1>Низкие цены</h1>
+                    </div>
+                    <h2>Мы работаем напрямую с тысячами<br>отелей, десятками поставщиков и<br>контролируем цены на номера.<br>Поэтому у нас всегда есть<br>выгодные предложения на<br>популярные направления.</h2>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-name">
+                        <img src="assets/images/svg/money.svg" alt="money">
+                        <h1>Низкие цены</h1>
+                    </div>
+                    <h2>Мы работаем напрямую с тысячами<br>отелей, десятками поставщиков и<br>контролируем цены на номера.<br>Поэтому у нас всегда есть<br>выгодные предложения на<br>популярные направления.</h2>
+                </div>
+
+            </div>
+        </div> -->
+
+        <div class="swiper-cont">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-info">
+                        <img src="assets/images/slider/slide1.png" alt="slide1">
+                        <div class="swiper-text">
+                            <h1>Дубай</h1>
+                            <h2>Atlantis The Palm</h2>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-info">
+                        <img src="assets/images/slider/slide2.png" alt="slide2">
+                        <div class="swiper-text">
+                            <h1>Париж</h1>
+                            <h2>Hôtel Plaza Athénée</h2>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-info">
+                        <img src="assets/images/slider/slide3.png" alt="slide3">
+                        <div class="swiper-text">
+                            <h1>Рим</h1>
+                            <h2>Rome Cavalieri</h2>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">Slide 4</div>
+                  <div class="swiper-slide">Slide 5</div>
+                  <div class="swiper-slide">Slide 6</div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-line"></div>
+
+        <div class="footer-cont">
+            <a href="index.html"><div class="footer-logo">
+                <img src="assets/images/logo/logo.svg" alt="logo">
+                <h1>САФК</h1>
+            </div></a>
+            <div class="footer-nav">
+                <h2>Компания</h2>
+                <h2>Команда</h2>
+                <h2>Контакты</h2>
+                <h2>Вакансии</h2>
+            </div>
+            <div class="footer-social-network">
+                <a href=""><img src="assets/images/svg/facebook.svg" alt="facebook"></a>
+                <a href=""><img src="assets/images/svg/telegram.svg" alt="telegram"></a>
+                <a href=""><img src="assets/images/svg/twiter.svg" alt="twiter"></a>
+            </div>
+        </div>
+
+        <div class="footer-line"></div>
+
+        <div class="pay-cont">
+            <h2>Безопасность</h2>
+            <h3>Наши партнёры по проведению платежей гарантируют безопасность ваших данных своей мировой репутацией.</h3>
+            <img src="assets/images/svg/pay.svg" alt="pay">
+        </div>
+    </footer>
+</body>
+</html>
